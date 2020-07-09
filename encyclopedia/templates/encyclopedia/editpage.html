@@ -1,0 +1,24 @@
+{% extends "encyclopedia/layout.html" %}
+{% block title %}
+    {{ title }}
+{% endblock %}
+
+{% block body %}
+
+
+<form action="{% url 'resave' %}" method="POST">
+    {% csrf_token %}
+Title: <input type="text" value="{{ title }}" id="title" name="title" >
+<br>
+<br>
+<textarea style="width: 700px; height: 350px;"  name="textarea"  id="textarea" >
+    {{ mdcontent }}
+</textarea>
+<br>
+<br>
+<button type="submit" >Submit</button>
+
+</form>
+
+
+{% endblock %}
