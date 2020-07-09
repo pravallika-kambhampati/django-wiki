@@ -1,5 +1,5 @@
 # Wiki
-Designing a Wikipedia-like online encyclopedia made using Django & HTML.
+Designing a Wikipedia-like online encyclopedia using Django & HTML.
 
 ## Understanding
 
